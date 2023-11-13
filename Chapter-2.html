@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Iterative Methods">
+    <meta name="description" content="">
+    <title>Chapter 2</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Chapter-2.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.21.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "salmamahfouz"
+}</script>
+    <meta name="theme-color" content="#0000ff">
+    <meta property="og:title" content="Chapter 2">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-2c00"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container" style="">
+            <ul class="u-custom-font u-font-montserrat u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-base" href="Welcome.html" style="padding: 10px 20px;">Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-base" href="Chapter-1.html" style="padding: 10px 20px;">Chapter 1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-base" href="Chapter-2.html" style="padding: 10px 20px;">Chapter 2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-base" href="Chapter-3.html" style="padding: 10px 20px;">Chapter 3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-base" href="Chapter-4.html" style="padding: 10px 20px;">Chapter 4</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-palette-2-base" href="contact.html" style="padding: 10px 20px;">Contact</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Welcome.html">Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-1.html">Chapter 1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-2.html">Chapter 2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-3.html">Chapter 3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-4.html">Chapter 4</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contact.html">Contact</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-center u-clearfix u-section-1" id="sec-661a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-default u-text-palette-1-base u-text-1">The Influence</h3>
+        <p class="u-text u-text-2">Growing up I realized that one of the most interesting creatures to observe are humans. That's why my decisions &amp; way of thinking is usually human centric. Below are my favorite projects that showcase this approach.</p>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="images/Sujet6.png" alt="" data-image-width="493" data-image-height="638">
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-section-2" id="sec-703c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-tab-links-align-justify u-tabs u-tabs-1">
+          <ul class="u-spacing-30 u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item" role="presentation">
+              <a class="active u-active-palette-2-base u-button-style u-hover-palette-2-base u-palette-1-light-2 u-tab-link u-tab-link-1" id="link-tab-081f" href="#tab-081f" role="tab" aria-controls="tab-081f" aria-selected="true">Smart Tap</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-2-base u-button-style u-hover-palette-2-base u-palette-1-light-2 u-tab-link u-tab-link-2" id="link-tab-4d57" href="#tab-4d57" role="tab" aria-controls="tab-4d57" aria-selected="false">Smart System for Classrooms</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-palette-2-base u-button-style u-hover-palette-2-base u-palette-1-light-2 u-tab-link u-tab-link-3" id="link-tab-3a42" href="#tab-3a42" role="tab" aria-controls="tab-3a42" aria-selected="false">Team Building</a>
+            </li>
+            <li class="u-tab-item u-tab-item-4" role="presentation">
+              <a class="u-active-palette-2-base u-button-style u-hover-palette-2-base u-palette-1-light-2 u-tab-link u-tab-link-4" id="tab-d7e7" href="#link-tab-d7e7" role="tab" aria-controls="link-tab-d7e7" aria-selected="false">Cloud Solutions</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-container-style u-tab-active u-tab-pane" id="tab-081f" role="tabpanel" aria-labelledby="link-tab-081f">
+              <div class="u-container-layout u-container-layout-1">
+                <img class="u-image u-image-default u-image-1" src="images/tap.png" alt="" data-image-width="1132" data-image-height="1294">
+                <p class="u-align-center u-text u-text-default u-text-1">Academic Course - Group Work</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-2">Domain:</h4>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-3">Problem Statement:</h4>
+                <p class="u-align-left u-text u-text-4">Water is the most crucial element in our lives, it is the basics of everything. Among one of the poorly managed resources in the domestic environment is water. This led to the introduction of sensor-operated taps which are usually present in newer buildings. The older buildings, however, remain operating with the regular taps. This happens due to the high cost of implementing new taps to existing structures and the hassle involved in doing so. That is what we aimed to overcome by our product, the Smart Tap.&nbsp;<br>
+                </p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-5">Objective:</h4>
+                <p class="u-align-center-xl u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-default-xl u-text-6">Water Conservation - Convenience &amp; Hygiene</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-7">Solution:</h4>
+                <p class="u-align-left u-text u-text-8">Electric solenoid valve, IR sensor, Microcontroller (Node MCU), Rechargeable battery, Resistor, Power transistor, Diode&nbsp;</p>
+                <img class="u-image u-image-default u-image-2" src="images/smarttap.png" alt="" data-image-width="2074" data-image-height="1166">
+                <p class="u-align-left u-text u-text-9">A simple item that is inserted in any water tap and turn into a smart tap, sensing the presence of a hand below that tap, if it senses a motion it will open the valve allowing the pass of water, if no hand it will close the valve and preventing any flow of water.</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-10">Components:</h4>
+              </div>
+            </div>
+            <div class="u-container-style u-tab-pane" id="tab-4d57" role="tabpanel" aria-labelledby="link-tab-4d57">
+              <div class="u-container-layout u-container-layout-2">
+                <p class="u-align-center u-text u-text-default u-text-11">Thesis Project - Group Work</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-12">Domain:</h4>
+                <div class="custom-expanded u-video u-video-contain u-video-1">
+                  <div class="embed-responsive embed-responsive-1">
+                    <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/cVGCv9gl8gc?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-13">Objective:</h4>
+                <p class="u-align-left u-text u-text-14">Use our knowledge to create a solution that helps our community.</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-15">Problem Statement:</h4>
+                <p class="u-align-left u-text u-text-16">Public schools in Egypt is a chaos, there are many obstacles that obscure the learning process.</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-17">Solution:</h4>
+                <p class="u-align-left u-text u-text-18">A system based on having an FPGA in every classroom. This FPGA performs facial recognition using OpenCV software to take attendance. The FPGA utilizes the open source resources provided by OpenCV to perform functionalities that are not limited to facial detection &amp; recognition but also attention detection and emotional status. In addition, the system processes readings from different analog and digital sensors to monitor the classroom environment This is done using ADC or digital connections on the FPGA itself.&nbsp;</p>
+                <p class="u-align-center u-text u-text-19">The video is showing the demo of the sensors system on the FPGA using VHDL language.&nbsp;</p>
+                <img class="u-image u-image-default u-image-3" src="images/E15FE032-CD7B-4481-AB83-86.JPG" alt="" data-image-width="1854" data-image-height="1447">
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-20">Components:</h4>
+                <p class="u-align-center u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-21">FPGA, Analogue Light Sensor, Digital Sensor</p>
+                <h4 class="u-align-center u-text u-text-default u-text-palette-1-base u-text-22">Publication:</h4>
+                <a href="https://ieeexplore.ieee.org/document/8909344" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-2-base u-radius-50 u-btn-1" target="_blank">click here</a>
+                <p class="u-align-center u-text u-text-default u-text-23">Face detection &amp; recognition test</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-tab-pane" id="tab-3a42" role="tabpanel" aria-labelledby="link-tab-3a42">
+              <div class="u-container-layout u-container-layout-3">
+                <p class="u-text u-text-24">Being a Team Leader for Level 1 Support Team for a year &amp; half - almost a new team - I had to work on developing team strategy &amp; enhancing the support process.</p>
+                <img class="u-image u-image-contain u-image-default u-image-4" src="images/Upskilling.png" alt="" data-image-width="1920" data-image-height="1080">
+                <h4 class="u-text u-text-black u-text-25">We had KPIs to tackle, to do this I evaluated my main asset, which is the human factor. Whether team member, customer, colleagues, my approach to any solution was a human centric approach.</h4>
+                <img class="u-image u-image-contain u-image-default u-image-5" src="images/2.png" alt="" data-image-width="1823" data-image-height="665">
+                <h4 class="u-text u-text-26">Steps were taken in the above order, except the follow up, it was happening in parallel.</h4>
+                <img class="u-image u-image-default u-image-6" src="images/3.png" alt="" data-image-width="1718" data-image-height="839">
+                <img class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-7" src="images/4.png" alt="" data-image-width="1321" data-image-height="887">
+                <img class="u-image u-image-contain u-image-default u-image-8" src="images/5.png" alt="" data-image-width="1626" data-image-height="865">
+                <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-contain u-image-default u-image-9" src="images/Upskilling-4.png" alt="" data-image-width="1090" data-image-height="749">
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-tab-pane u-tab-pane-4" id="link-tab-d7e7" role="tabpanel" aria-labelledby="tab-d7e7">
+              <div class="u-container-layout u-container-layout-4">
+                <p class="u-text u-text-default u-text-palette-1-base u-text-27">I'm still kicking off this part of my career, so I have achieved simple tasks. To see those tasks you can visit my GitHub page. To know about my intentions for this part of my career, you can wait till chapter 4.</p>
+                <a href="https://github.com/SalmaMahfouz" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-2-base u-radius-50 u-btn-2" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-349d">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h5 class="u-align-center u-text u-text-black u-text-1">*** If you have questions or need more details about the above projects, please reach out through the information in the contact page.</h5>
+        <div class="u-align-center u-container-style u-grey-10 u-group u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h4 class="u-text u-text-2">Chapter Three:&nbsp;<br>In Parallel
+            </h4>
+            <a href="Chapter-3.html" class="u-border-none u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1">Begin</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-clearfix u-footer u-white" id="sec-f0e0"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#svg-bc99"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="svg-bc99" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Welcome.html">Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-1.html">Chapter 1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-2.html">Chapter 2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-3.html">Chapter 3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-4.html">Chapter 4</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contact.html">Contact</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Welcome.html">Welcome</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-1.html">Chapter 1</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-2.html">Chapter 2</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-3.html">Chapter 3</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Chapter-4.html">Chapter 4</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contact.html">Contact</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></footer>
+    <!-- <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section> -->
+  
+</body></html>
